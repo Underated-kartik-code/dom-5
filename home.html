@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <title>home</title>
 </head>
 <body>
-    <h1>Welcome you are login successfully</h1>
+    <!-- <h1>Welcome you are login successfully</h1>
+    <h3>Create post <i class="ri-add-large-line"></i></h3> -->
+
+    <header>
+        <h1>Welcome Back 👋</h1>
+        <button class="create-btn">
+            <i class="ri-add-line"></i> Create Post
+        </button>
+    </header>
+
+    <main class="posts-container">
+
+        <div class="post-card">
+            <div class="post-header">
+                <h4>John Doe</h4>
+                <button class="delete-btn">
+                    <i class="ri-delete-bin-line"></i>
+                </button>
+            </div>
+            <p>This is my first post on this mini social blogging app 🚀</p>
+        </div>
+
+        <div class="post-card">
+            <div class="post-header">
+                <h4>Sarah</h4>
+                <button class="delete-btn">
+                    <i class="ri-delete-bin-line"></i>
+                </button>
+            </div>
+            <p>Learning DOM manipulation and JavaScript logic is powerful!</p>
+        </div>
+
+        <div class="post-card">
+            <div class="post-header">
+                <h4>Admin</h4>
+                <button class="delete-btn">
+                    <i class="ri-delete-bin-line"></i>
+                </button>
+            </div>
+            <p>Welcome everyone to our mini social platform.</p>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
