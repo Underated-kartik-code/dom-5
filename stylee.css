@@ -138,7 +138,7 @@ header h1 {
 }
 
 /* Textarea */
-.post-form textarea {
+.post-form input {
     width: 100%;
     resize: none;
     padding: 10px;
@@ -149,7 +149,7 @@ header h1 {
     transition: 0.3s ease;
 }
 
-.post-form textarea:focus {
+.post-form input:focus {
     border-color: #292828;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
