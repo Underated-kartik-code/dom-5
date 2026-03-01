@@ -25,7 +25,7 @@ btn.addEventListener('click',function(event){
             return;
         }
     }
-    console.log("imperfect")
+    alert("Id password are wrong check it onece...")
 
 
     let form = document.querySelector('form');

@@ -1,14 +1,10 @@
 let postbtn = document.querySelector('.post-btn')
-let postarray = []
 
 postbtn.addEventListener('click',function(event){
     event.preventDefault();
 
     let title =  document.querySelector('#title')
     let descreption = document.querySelector('#descreption')
-
-    console.log(title.value)
-    console.log(descreption.value)
 
     let div = document.createElement('div')
     div.classList.add('post-card')
@@ -20,6 +16,11 @@ postbtn.addEventListener('click',function(event){
     let removebtn = document.createElement('button')
     removebtn.classList.add('delete-btn')
     removebtn.classList.add('ri-delete-bin-line')
+
+    removebtn.addEventListener('click', function () {
+    div.remove();
+    });
+
 
     let p = document.createElement('p')
 
@@ -33,9 +34,14 @@ postbtn.addEventListener('click',function(event){
     div.appendChild(p);
 
     document.querySelector('.posts-container').appendChild(div);
-    postarray.push(div);
 
     let form = document.querySelector('.post-form')
     form.reset();
 })
+
+
+
+
+
+
 
