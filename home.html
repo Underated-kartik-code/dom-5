@@ -10,15 +10,31 @@
     <title>home</title>
 </head>
 <body>
-    <!-- <h1>Welcome you are login successfully</h1>
-    <h3>Create post <i class="ri-add-large-line"></i></h3> -->
-
     <header>
         <h1>Welcome Back 👋</h1>
         <button class="create-btn">
             <i class="ri-add-line"></i> Create Post
         </button>
     </header>
+
+    <!-- Post Form (Hidden by Default) -->
+<section class="post-form-section">
+
+    <form class="post-form">
+        <textarea 
+            placeholder="What's on your mind?"
+            rows="4"
+            required>
+        </textarea>
+
+        <div class="form-actions">
+            <button type="submit" class="post-btn">
+                Post
+            </button>
+        </div>
+    </form>
+
+</section>
 
     <main class="posts-container">
 
@@ -32,7 +48,7 @@
             <p>This is my first post on this mini social blogging app 🚀</p>
         </div>
 
-        <div class="post-card">
+        <!-- <div class="post-card">
             <div class="post-header">
                 <h4>Sarah</h4>
                 <button class="delete-btn">
@@ -50,9 +66,9 @@
                 </button>
             </div>
             <p>Welcome everyone to our mini social platform.</p>
-        </div>
+        </div> -->
 
     </main>
-    <script src="script.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>

@@ -115,3 +115,67 @@ header h1 {
     color: #555;
     line-height: 1.5;
 }
+
+
+
+/* Post Form Section */
+.post-form-section {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+/* Form Box */
+.post-form {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Textarea */
+.post-form textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.post-form textarea:focus {
+    border-color: #292828;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Post Button */
+.post-btn {
+    background-color: #292828;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.post-btn:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+.post-btn:active {
+    transform: scale(0.95);
+}
