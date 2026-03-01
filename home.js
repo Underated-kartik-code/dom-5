@@ -27,6 +27,11 @@ postbtn.addEventListener('click',function(event){
     h4.textContent = title.value;
     p.textContent = descreption.value
 
+    if(title.value.trim() === '' || description.value.trim() === ''){
+    alert("Please fill all fields!");
+    return;
+    }
+
     inhead.appendChild(h4)
     inhead.appendChild(removebtn)
 
